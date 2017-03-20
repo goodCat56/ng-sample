@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>msf</title>
+  </head>
+  <body>
+
+    <main>Loading...</main>
+
+    <script src="lib/es6-shim.min.js"></script>
+    <script src="lib/angular2-polyfills.js"></script>
+    <script src="lib/traceur-runtime.js"></script>
+    <script src="lib/system-csp-production.src.js"></script>
+    <script src="lib/Reflect.js"></script>
+    <link href="app/css/app.css" rel="stylesheet" />
+    <link href="app/css/login.css" rel="stylesheet" />
+
+    <script>
+      System.config({defaultJSExtensions: true});
+    </script>
+
+    <script src="lib/angular2.js"></script>
+    <script src="lib/Rx.js"></script>
+
+    <script>
+      System.import('app/index').catch(console.log.bind(console));
+    </script>
+
+    <div class="container">
+        <div class="row msf-login">
+          <h4>Please choose an access typology</h4>
+       </div>
+        <div class="row">
+           <div class="msf-login-images">
+               <div class="col-md-8 col-md-offset-3 img_user">
+                  <img src="app/images/user.png" class="img-responsive"/>
+                  <button type="button" class="btn btn-primary">User</button>
+              </div>
+              <div class="col-md-8 col-md-offset-1 img_manufacturer">
+                  <img src="app/images/manufacturer.png" class="img-responsive"/>
+                  <button type="button" class="btn btn-primary">Manufacturer</button>
+              </div>
+          </div> 
+        </div>
+    </div>    
+  </body>
+</html>

@@ -1,2 +1,11 @@
-# msf-catalogue-app
-Angular2 Client Application
+How to start
+
+npm install
+
+bower install
+
+npm run build
+
+npm start
+
+

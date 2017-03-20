@@ -1,0 +1,37 @@
+$font-stack:Helvetica, sans-serif;
+$primary-color: #ee3428;
+
+$msf-container-width:100%; 
+$msf-container-height:100%;
+$login-user-text-color:#FFFFFF;
+
+
+ .msf-login {
+    width:$msf-container-width;
+    height:$msf-container-height;
+    margin-top:10%;
+    text-align: center;
+}
+
+.msf-login-images {
+    width:$msf-container-width;
+    height:$msf-container-height;
+
+    .img_user {
+        width:$msf-container-width/4;
+        height:$msf-container-height;
+    }
+
+    .img_manufacturer {
+        width:$msf-container-width/4;
+        height:$msf-container-height;
+    }
+
+    .btn-primary {
+      width:50%;
+      height:30px;
+      float:left;
+      background:$primary-color !important;
+      color:$login-user-text-color;
+    }
+}
