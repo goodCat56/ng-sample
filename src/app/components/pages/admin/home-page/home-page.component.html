@@ -1,0 +1,13 @@
+<p>
+  Admin home-page works!
+</p>
+
+<a routerLink="/admin/home/manufactures" routerLinkActive="active">Manufactures</a>
+<a routerLink="/admin/home/users" routerLinkActive="active">Users</a>
+
+<!--Different way to navigate if you need it-->
+<a (click)="goToProducts()" routerLinkActive="active">Products</a>
+
+
+<!--The child you navigate to will live here-->
+<router-outlet></router-outlet>
